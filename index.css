@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Spoqa Han Sans, sans-serif;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    font-size: 50%;
+  }
+}
+
+.Container {
+  max-width: 1080px;
+  width: 100%;
+  margin: auto;
+}
+
+.Hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: 50%, 50%;
+  background-size: cover;
+  text-align: center;
+}
+
+.Hero__Box {
+  min-width: 320px;
+  max-width: 840px;
+  padding: 2.4em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  color: #eeeeee;
+}
+
+.Hero__Text {
+  font-size: 4.8em;
+  margin: 0 0 24px 0;
+}
+
+.Hero__Description {
+  margin: 0;
+  font-size: 2.4em;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.Section {
+  padding: 24px;
+}
+
+.Section--white {
+}
+
+.Section--gray {
+  background-color: #ff7472;
+}
+
+.Section__Heading {
+  font-size: 3.6em;
+  color: #333333;
+  margin-bottom: 36px;
+}
+
+.Section--gray .Section__Heading {
+  color: #eeeeee;
+}
+
+.Session {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.Session__Left {
+  width: 66.6667%;
+  padding-right: 36px;
+}
+
+.Session__Right {
+  width: 33.3333%;
+}
+
+@media screen and (max-width: 568px) {
+  .Session {
+    flex-direction: column;
+  }
+
+  .Session__Left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .Session__Right {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.Session__List {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Session__List__Item {
+  margin-bottom: 12px;
+  font-size: 1.6em;
+}
+
+.Session__Heading {
+  font-size: 3em;
+}
+
+.Avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.Link {
+  color: #ff7472;
+  transition: color 0.25s ease;
+}
+
+.Link:hover {
+  color: #e35b5c;
+}
+
+.Icon {
+  margin-left: 4px;
+  width: 24px;
+}
+
+.Grid {
+  overflow: hidden;
+}
+
+.Grid__Row {
+  float: left;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.Grid__Column {
+  float: left;
+  width: 50%;
+}
+
+.Grid__Column:first-child {
+  padding-right: 6px;
+}
+
+.Grid__Column:last-child {
+  padding-left: 6px;
+}
+
+@media screen and (max-width: 568px) {
+  .Grid__Column {
+    width: 100%;
+  }
+
+  .Grid__Column:first-child {
+    padding-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .Grid__Column:last-child {
+    padding-left: 0;
+  }
+}
+
+.Grid__Image {
+  width: 100%;
+}
+
+footer {
+  background-color: #777777;
+  color: #eeeeee;
+  text-align: center;
+  padding: 48px;
+}
+
+small {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
